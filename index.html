@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+	<style>
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    </head>
+    <body>
+  
+<div data-role="page" id="pageone">
+  <div data-role="main" class="ui-content">
+    <h2>Chat Book</h2>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="https://server.iad.liveperson.net/hc/33254470/?cmd=file&file=visitorWantsToChat&site=33254470"><img src="OrangeLogo.jpg" alt="Orange" class="ui-li-icon">Orange</a></li>
+      <li><a href="https://server.iad.liveperson.net/hc/14379888/?cmd=file&file=visitorWantsToChat&site=14379888"><img src="cellcom-logo.png" alt="Orange" class="ui-li-icon">Cellcom</a></li>      	 
+      <li><a href="http://www.liveperson.com"><img src="lp.png" alt="Orange" class="ui-li-icon">Liveperson</a></li>
+      <li><a href="#cellular" data-transition="slide">Cellular<span class="ui-li-count">2</span></a></li>
+    </ul>
+  </div>
+    <div data-role="footer">
+    <h1>Created by Oren Katz</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="cellular">
+  <div data-role="main" class="ui-content">
+    <h2>Chat Book</h2>
+	 <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="home" data-transition="slide" data-direction="reverse">Back</a></li>
+      </ul>
+    </div>
+    <form class="ui-filterable">
+      <input id="myFilter2" data-type="search">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter2" data-autodividers="true" data-inset="true">
+      <li><a href="#"><img src="orange-logo.jpg" alt="Orange" class="ui-li-icon">אורנג</a></li>
+      <li><a href="#"><img src="cellcom-logo.png" alt="Orange" class="ui-li-icon">סלקום</a></li>
+    </ul>
+  </div>
+    <div data-role="footer">
+    <h1>Created by Oren Katz</h1>
+  </div>
+  
+ </div>
+ 
+    </body>
+</html>
